@@ -198,8 +198,8 @@ protected:
 
 	int getReverseType(const char* type) const
 	{
-		btHashString key(type);
-		const int* valuePtr = mTypeLookup.find(key);
+		btHashString key1(type);
+		const int* valuePtr = mTypeLookup.find(key1);
 		if (valuePtr)
 			return *valuePtr;
 
